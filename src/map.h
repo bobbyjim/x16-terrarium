@@ -18,11 +18,11 @@
 #define MAP_BANK_END   	63
 #define MAP_SIZE (MAP_ROWS * MAP_COLS)
 
-#define MAP_FOOD		0
+#define MAP_PLANTS		0
 #define MAP_CREATURES	1
 
 #define  SYM_CREATURE   '@'
-#define  SYM_FOOD       '*'
+#define  SYM_PLANT      '*'
 
 // Macro to set active bank
 #define SET_MAP_BANK(bank) (RAM_BANK = (bank))

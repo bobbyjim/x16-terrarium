@@ -42,7 +42,7 @@ void main()
    clrscr();
 
    map_init(MAP_CREATURES);
-   map_init(MAP_FOOD);
+   map_init(MAP_PLANTS);
 
    // Main loop
    while (!done) {

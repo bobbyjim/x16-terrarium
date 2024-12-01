@@ -25,9 +25,9 @@ void creature_move(Creature *creature) {
 }
 
 void creature_consume_food(Creature *creature) {
-	byte contents = map_get_cell(MAP_FOOD, creature->x, creature->y);
-	if (contents == SYM_FOOD) {
+	byte contents = map_get_cell(MAP_PLANTS, creature->x, creature->y);
+	if (contents == SYM_PLANT) {
 		creature->hunger_level = 0; 							// yum!
-		map_set_cell(MAP_FOOD, creature->x, creature->y, ' ');	// eaten.
+		map_set_cell(MAP_PLANTS, creature->x, creature->y, ' ');	// eaten.
 	}
 }
