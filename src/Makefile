@@ -1,6 +1,6 @@
-SOURCES = main.c debug.c  creature.c food.c map.c plant.c timer.c
+SOURCES = main.c timer.c creature.c DNA.c map.c test.c system.c
 
-PROGRAM = TERRARIUM
+PROGRAM = MAIN
 
 CC65_TARGET = cx16
 
@@ -29,5 +29,3 @@ $(PROGRAM): $(OBJECTS)
 
 $(OBJECTS): $(OBJDIR)/%.o: %.c
 	$(CC) -c $(CFLAGS) -o $@ $<
-
-

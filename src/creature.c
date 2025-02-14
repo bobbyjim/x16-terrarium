@@ -1,33 +1,28 @@
 #include <stdlib.h>
-#include <conio.h>
+#include <string.h>
 
 #include "common.h"
 #include "creature.h"
-#include "map.h"
 
-void creature_move(Creature *creature) {
-    // Move randomly in one of four directions
-    byte direction = rand() % 4;
+unsigned char runtime_high_id = 0;
 
-	switch(direction) {
-		case 0:	creature->x = (creature->x + 1) % MAP_COLS;  // Right
-				break;
+void creature_init(Creature* creature) {
 
-		case 1: creature->x = (creature->x + MAP_COLS - 1) % MAP_COLS;  // Left
-				break;
-
-		case 2: creature->y = (creature->y + 1) % MAP_ROWS;  // Down
-				break;
-
-		case 3: creature->y = (creature->y + MAP_ROWS - 1) % MAP_ROWS;  // Up
-				break;
-	}
+	creature->runtime_id = runtime_high_id++;
+	creature->x = rand() % MAP_WIDTH;
+	creature->y = rand() % MAP_HEIGHT;
+	creature->action = 0;
 }
 
-void creature_consume_food(Creature *creature) {
-	byte contents = map_get_cell(MAP_PLANTS, creature->x, creature->y);
-	if (contents == SYM_PLANT) {
-		creature->hunger_level = 0; 							// yum!
-		map_set_cell(MAP_PLANTS, creature->x, creature->y, ' ');	// eaten.
-	}
+#ifdef _TESTMODE_
+void test_creature_init() {
+    Creature test_creature;
+    creature_init(&test_creature);
+
+    // Assert conditions
+    assert(test_creature.runtime_id == 0);  // Assuming it's the first ID
+    assert(test_creature.x >= 0 && test_creature.x < GRID_WIDTH);
+    assert(test_creature.y >= 0 && test_creature.y < GRID_HEIGHT);
 }
+#endif
+

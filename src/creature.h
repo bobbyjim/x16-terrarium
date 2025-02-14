@@ -1,12 +1,15 @@
 #ifndef _CREATURE_H_
 #define _CREATURE_H_
 
+#include "common.h"
+
 typedef struct {
-	short x, y;			// position on the grid
-	unsigned int hunger_level;
+	unsigned char runtime_id;
+	int x    :8;
+	int y    :8;
+	unsigned char action;
 } Creature;
 
-void creature_move(Creature *creature);
-void creature_consume_food(Creature *creature);
+void creature_init(Creature* creature);
 
 #endif

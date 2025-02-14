@@ -1,4 +1,4 @@
-.obj/main.o:	main.c common.h creature.h food.h map.h timer.h debug.h
+.obj/main.o:	main.c common.h timer.h creature.h system.h test.h map.h
 
-main.c common.h creature.h food.h map.h timer.h debug.h:
+main.c common.h timer.h creature.h system.h test.h map.h:
 

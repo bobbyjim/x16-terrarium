@@ -5,14 +5,13 @@
 
 struct timespec ts;
 
-void pause_jiffies(unsigned timer)
+void pause_jiffies(unsigned jiffies)
 {
-    while(--timer) {}
-    //clock_t now = clock();
-    //if (clock() < now + jiffies)
-   // {
-   //    while(clock() < now + jiffies) { /* wait */ }
-   // }
+    clock_t now = clock();
+    if (clock() < now + jiffies)
+    {
+       while(clock() < now + jiffies) { /* wait */ }
+    }
 }
 
 long getMillis()

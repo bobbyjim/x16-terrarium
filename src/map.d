@@ -1,4 +1,4 @@
-.obj/map.o:	map.c common.h map.h
+.obj/map.o:	map.c map.h common.h system.h creature.h
 
-map.c common.h map.h:
+map.c map.h common.h system.h creature.h:
 

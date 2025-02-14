@@ -1,1 +1,1 @@
-~/commanderx16/x16emu_macos_intel-r47/x16emu -prg TERRARIUM -run -scale 2
+../../x16 -bas BOOT.BAS -run -scale 2
