@@ -5,6 +5,7 @@
 
 //struct Creature; // so cc65 doesn't panic
 
+void system_ack();
 void print_creature(Creature* creature);
 
 #endif

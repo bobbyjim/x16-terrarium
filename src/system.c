@@ -7,18 +7,19 @@
 #include <stdio.h>
 #include "creature.h"
 
-void graphics_ack() {
+void system_ack() {
 	printf(".");
 }
 
-#ifdef __CX16__
-#include <conio.h>
-#else
-//#define clrscr()
-//#define gotoxy(x,y)
-//#define textcolor(c)
-//#define cputc(c)			printf("%c",c)
-//#define kbhit()				0
+//
+//  When running on something else.
+//
+#ifndef __CX16__
+#define clrscr()
+#define gotoxy(x,y)
+#define textcolor(c)
+#define cputc(c)			printf("%c",c)
+#define kbhit()				0
 #endif
 
 void print_creature(Creature* creature) {

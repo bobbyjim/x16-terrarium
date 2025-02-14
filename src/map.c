@@ -1,8 +1,11 @@
 #include "map.h"
 #include "common.h"
 #include "system.h"
+#include "creature.h"
 
 #include <conio.h>
+
+extern Creature creatures[];
 
 void map_show() {
 	unsigned char col, row;
@@ -12,8 +15,8 @@ void map_show() {
 	RAM_BANK = RAM_BANK_MAP;
 
     clrscr();
-	textcolor(COLOR_LIGHTGREEN);
-	cputsxy(0,0,"x16 terrarium");
+	textcolor(COLOR_RED);
+	cputsxy(65,0,"x16 terrarium");
     gotoxy(0,1);
     for(row=0; row<MAP_HEIGHT; ++row)	
 	{
@@ -21,15 +24,30 @@ void map_show() {
 	   {
 		  index = col + row * MAP_WIDTH;
           value = ((char*)(0x8000))[index];
-		  if (value > 0) {
-			textcolor(COLOR_BROWN);
-			cputc('x');
+		  if (value > 15) {
+			textcolor(COLOR_GRAY3);
+			cputc('.');
+		  }
+		  else if (value > 5) {
+			textcolor(COLOR_GRAY2);
+			cputc('.');
+		  }
+		  else if (value > 0) {
+			textcolor(COLOR_GRAY1);
+			cputc('.');
 		  }
 		  else {
-			textcolor(COLOR_BLUE);
+			textcolor(COLOR_BROWN);
 			cputc('.');
 		  }
 	   }
-//	   cprintf("\n");
+	}
+
+	for(index=0; index<CREATURE_COUNT; ++index) {
+		if (creatures[index].runtime_id > 0) {
+			gotoxy(creatures[index].x, creatures[index].y);
+			textcolor(COLOR_WHITE);
+			cputc('c');
+		}
 	}
 }
