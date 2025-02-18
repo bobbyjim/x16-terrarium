@@ -10,6 +10,7 @@ typedef struct {
 	unsigned char 	action;
 } Creature;
 
+void creature_show(Creature* creature);
 void creature_init(Creature* creature);
 void creature_randomWalk(Creature* creature);
 

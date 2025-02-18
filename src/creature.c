@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 
 #include "common.h"
 #include "creature.h"
@@ -9,9 +10,17 @@ unsigned char runtime_high_id = 0;
 void creature_init(Creature* creature) {
 
 	creature->runtime_id = ++runtime_high_id;
-	creature->x = rand() % MAP_WIDTH;
-	creature->y = rand() % MAP_HEIGHT;
+	creature->x = 5 + rand() % (MAP_WIDTH-10);
+	creature->y = 5 + rand() % (MAP_HEIGHT-10);
 	creature->action = 0;
+}
+
+void creature_show(Creature* creature) {
+	if (creature->runtime_id > 0) {
+		gotoxy(creature->x, creature->y+1);
+		textcolor(COLOR_WHITE);
+		cputc('c');
+	}
 }
 
 void creature_randomWalk(Creature* creature) {

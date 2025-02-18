@@ -1,6 +1,7 @@
 10 COLOR 2,0
 20 ? CHR$($93)
 
+25 REM FONT TYPE IS "3-D"
 30?" **     **  **   ****   
 31?"//**   **  ***  */// *  
 32?" //** **  //** /*   /   
@@ -28,8 +29,7 @@
 200 REM LOAD RESOURCES HERE
 210 REM ...
 220 REM ...
-230 POKE 0,1 :REM RAM BANK 1
-240 LOAD "MAP.BIN",8,1,$8000
+230 POKE 0,1 :LOAD  "MAP.BIN.TMP",8,1,$8000  :REM RAM BANK 1
 997 ? CHR$(147)
 998 REM NOW LOAD MAIN PROGRAM
 999 LOAD "MAIN",8,1

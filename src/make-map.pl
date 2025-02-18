@@ -8,13 +8,14 @@ my $rows = shift || 58;
 my $cols = shift || 80;
 my @map  = map { [(0) x $cols] } (1..$rows);
 
-my $mu = 1;
-for (1..5 * $mu)
+my $mu = 3;
+my $epochs = 5 * $mu;
+for (1..$epochs)
 {
    my $x = int(rand()*($cols-10))+5;
    my $y = int(rand()*($rows-10))+5;
 
-   for (1..int(rand($rows*$cols)/($mu)))
+   for (1..int(rand($rows*$cols))) # /($mu)))
    {
       $x += 2*rand()-1;
       $y += 2*rand()-1;
@@ -33,7 +34,7 @@ showTerrain();
 
 sub saveTerrain
 {
-   open my $out, '>', 'MAP.BIN.TMP';
+   open my $out,   '>', 'MAP.BIN.TMP';
    print $out pack 'xx';
 #   print $out pack 'CC', $rows-1, $cols-1;
    for my $r (0..$rows-1)
@@ -50,6 +51,7 @@ sub saveTerrain
          #print int($map[$r][$c]/16) . " " . ($map[$r][$c] & 15) . "\n" if $map[$r][$c] > 15;
       }
    }
+
    close $out;
 }
 

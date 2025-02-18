@@ -43,10 +43,12 @@ void main() {
 	map_show();
 
 	for(;;) {
-		map_show();
 		pause_jiffies(100);
-		for(i=0; i<num_creatures; ++i)
+		for(i=0; i<num_creatures; ++i) {
+			map_show_cell(creatures[i].y, creatures[i].x);
 			creature_randomWalk(&creatures[i]);
-
+			map_show_cell(creatures[i].y, creatures[i].x);
+			creature_show(&creatures[i]);
+		}
 	}
 }
