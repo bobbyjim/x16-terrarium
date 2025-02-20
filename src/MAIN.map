@@ -1,26 +1,26 @@
 Modules list:
 -------------
 main.o:
-    CODE              Offs=000000  Size=00009B  Align=00001  Fill=0000
+    CODE              Offs=000000  Size=000088  Align=00001  Fill=0000
 timer.o:
-    CODE              Offs=00009B  Size=000074  Align=00001  Fill=0000
+    CODE              Offs=000088  Size=000074  Align=00001  Fill=0000
     BSS               Offs=000000  Size=000008  Align=00001  Fill=0000
 creature.o:
-    CODE              Offs=00010F  Size=000311  Align=00001  Fill=0000
+    CODE              Offs=0000FC  Size=000346  Align=00001  Fill=0000
     RODATA            Offs=000000  Size=000030  Align=00001  Fill=0000
 DNA.o:
-    CODE              Offs=000420  Size=000006  Align=00001  Fill=0000
+    CODE              Offs=000442  Size=000006  Align=00001  Fill=0000
 map.o:
-    CODE              Offs=000426  Size=0000D5  Align=00001  Fill=0000
+    CODE              Offs=000448  Size=0000D5  Align=00001  Fill=0000
     RODATA            Offs=000030  Size=00000E  Align=00001  Fill=0000
 test.o:
-    CODE              Offs=0004FB  Size=00000C  Align=00001  Fill=0000
+    CODE              Offs=00051D  Size=00000C  Align=00001  Fill=0000
     RODATA            Offs=00003E  Size=00001E  Align=00001  Fill=0000
 system.o:
-    CODE              Offs=000507  Size=00000C  Align=00001  Fill=0000
+    CODE              Offs=000529  Size=00000C  Align=00001  Fill=0000
     RODATA            Offs=00005C  Size=000002  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_directerrno.o):
-    CODE              Offs=000513  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=000535  Size=000009  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_file.o):
     DATA              Offs=000000  Size=00001E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_hextab.o):
@@ -28,47 +28,47 @@ system.o:
 /Volumes/Zort/git/cc65/lib/cx16.lib(_longminstr.o):
     RODATA            Offs=00006E  Size=00000C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_mappederrno.o):
-    CODE              Offs=00051C  Size=00000F  Align=00001  Fill=0000
+    CODE              Offs=00053E  Size=00000F  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_oserror.o):
     BSS               Offs=000008  Size=000001  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_printf.o):
-    CODE              Offs=00052B  Size=0003A1  Align=00001  Fill=0000
+    CODE              Offs=00054D  Size=0003A1  Align=00001  Fill=0000
     BSS               Offs=000009  Size=00002B  Align=00001  Fill=0000
     DATA              Offs=00001E  Size=000003  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_seterrno.o):
-    CODE              Offs=0008CC  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=0008EE  Size=000009  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(_sys.o):
-    CODE              Offs=0008D5  Size=000044  Align=00001  Fill=0000
+    CODE              Offs=0008F7  Size=000044  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(add.o):
-    CODE              Offs=000919  Size=000018  Align=00001  Fill=0000
+    CODE              Offs=00093B  Size=000018  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(addysp.o):
-    CODE              Offs=000931  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=000953  Size=00000E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(aslax1.o):
-    CODE              Offs=00093F  Size=000008  Align=00001  Fill=0000
+    CODE              Offs=000961  Size=000008  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(aslax2.o):
-    CODE              Offs=000947  Size=00000B  Align=00001  Fill=0000
+    CODE              Offs=000969  Size=00000B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(aslax3.o):
-    CODE              Offs=000952  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=000974  Size=00000E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(axlong.o):
-    CODE              Offs=000960  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=000982  Size=00000D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(callmain.o):
-    CODE              Offs=00096D  Size=000017  Align=00001  Fill=0000
+    CODE              Offs=00098F  Size=000017  Align=00001  Fill=0000
     DATA              Offs=000021  Size=000004  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(clock.o):
-    CODE              Offs=000984  Size=00000F  Align=00001  Fill=0000
+    CODE              Offs=0009A6  Size=00000F  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(clrscr.o):
-    CODE              Offs=000993  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=0009B5  Size=000011  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(color.o):
-    CODE              Offs=0009A4  Size=00002A  Align=00001  Fill=0000
+    CODE              Offs=0009C6  Size=00002A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(condes.o):
-    CODE              Offs=0009CE  Size=00000C  Align=00001  Fill=0000
+    CODE              Offs=0009F0  Size=00000C  Align=00001  Fill=0000
     DATA              Offs=000025  Size=000025  Align=00001  Fill=0000
     ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(cputc.o):
-    CODE              Offs=0009DA  Size=000062  Align=00001  Fill=0000
+    CODE              Offs=0009FC  Size=000062  Align=00001  Fill=0000
     RODATA            Offs=00007A  Size=000008  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(cputs.o):
-    CODE              Offs=000A3C  Size=00001D  Align=00001  Fill=0000
+    CODE              Offs=000A5E  Size=00001D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(crt0.o):
     STARTUP           Offs=000000  Size=000021  Align=00001  Fill=0000
     ONCE              Offs=00000C  Size=00001B  Align=00001  Fill=0000
@@ -76,152 +76,156 @@ system.o:
 /Volumes/Zort/git/cc65/lib/cx16.lib(ctype.o):
     RODATA            Offs=000082  Size=00008B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ctypemask.o):
-    CODE              Offs=000A59  Size=00001E  Align=00001  Fill=0000
-/Volumes/Zort/git/cc65/lib/cx16.lib(decaxy.o):
-    CODE              Offs=000A77  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=000A7B  Size=00001E  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(decsp1.o):
+    CODE              Offs=000A99  Size=000009  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(decsp2.o):
-    CODE              Offs=000A80  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=000AA2  Size=00000D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(decsp3.o):
-    CODE              Offs=000A8D  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=000AAF  Size=00000D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(decsp4.o):
-    CODE              Offs=000A9A  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=000ABC  Size=00000D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(decsp6.o):
-    CODE              Offs=000AA7  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=000AC9  Size=00000D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(div.o):
-    CODE              Offs=000AB4  Size=000015  Align=00001  Fill=0000
+    CODE              Offs=000AD6  Size=000015  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(divt.o):
-    CODE              Offs=000AC9  Size=000015  Align=00001  Fill=0000
+    CODE              Offs=000AEB  Size=000015  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(errno.o):
     BSS               Offs=000034  Size=000002  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(exehdr.o):
     EXEHDR            Offs=000000  Size=00000C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(filedes.o):
-    CODE              Offs=000ADE  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=000B00  Size=00000E  Align=00001  Fill=0000
     DATA              Offs=00004A  Size=000010  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(fwrite.o):
-    CODE              Offs=000AEC  Size=000077  Align=00001  Fill=0000
+    CODE              Offs=000B0E  Size=000077  Align=00001  Fill=0000
     BSS               Offs=000036  Size=000002  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(gettime.o):
-    CODE              Offs=000B63  Size=00004C  Align=00001  Fill=0000
+    CODE              Offs=000B85  Size=00004C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(gotoxy.o):
-    CODE              Offs=000BAF  Size=00000F  Align=00001  Fill=0000
+    CODE              Offs=000BD1  Size=00000F  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(incaxy.o):
+    CODE              Offs=000BE0  Size=00000B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp1.o):
-    CODE              Offs=000BBE  Size=000007  Align=00001  Fill=0000
+    CODE              Offs=000BEB  Size=000007  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp2.o):
-    CODE              Offs=000BC5  Size=000015  Align=00001  Fill=0000
+    CODE              Offs=000BF2  Size=000015  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp3.o):
-    CODE              Offs=000BDA  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=000C07  Size=000005  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp4.o):
-    CODE              Offs=000BDF  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=000C0C  Size=000005  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp5.o):
-    CODE              Offs=000BE4  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=000C11  Size=000005  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(incsp6.o):
-    CODE              Offs=000BE9  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=000C16  Size=000005  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(jmpvec.o):
     DATA              Offs=00005A  Size=000003  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(kernal.o):
 /Volumes/Zort/git/cc65/lib/cx16.lib(ladd.o):
-    CODE              Offs=000BEE  Size=000024  Align=00001  Fill=0000
+    CODE              Offs=000C1B  Size=000024  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lcmp.o):
-    CODE              Offs=000C12  Size=00003B  Align=00001  Fill=0000
+    CODE              Offs=000C3F  Size=00003B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ldaxsp.o):
-    CODE              Offs=000C4D  Size=000009  Align=00001  Fill=0000
+    CODE              Offs=000C7A  Size=000009  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ldeaxysp.o):
-    CODE              Offs=000C56  Size=000013  Align=00001  Fill=0000
+    CODE              Offs=000C83  Size=000013  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ldiv.o):
-    CODE              Offs=000C69  Size=00001C  Align=00001  Fill=0000
+    CODE              Offs=000C96  Size=00001C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lmul.o):
-    CODE              Offs=000C85  Size=000059  Align=00001  Fill=0000
+    CODE              Offs=000CB2  Size=000059  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lneg.o):
-    CODE              Offs=000CDE  Size=00001E  Align=00001  Fill=0000
+    CODE              Offs=000D0B  Size=00001E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(loadaddr.o):
     LOADADDR          Offs=000000  Size=000002  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lpush.o):
-    CODE              Offs=000CFC  Size=00001E  Align=00001  Fill=0000
+    CODE              Offs=000D29  Size=00001E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lshelp.o):
-    CODE              Offs=000D1A  Size=000052  Align=00001  Fill=0000
+    CODE              Offs=000D47  Size=000052  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lsub.o):
-    CODE              Offs=000D6C  Size=000024  Align=00001  Fill=0000
+    CODE              Offs=000D99  Size=000024  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ltoa.o):
-    CODE              Offs=000D90  Size=000093  Align=00001  Fill=0000
+    CODE              Offs=000DBD  Size=000093  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(ludiv.o):
-    CODE              Offs=000E23  Size=000077  Align=00001  Fill=0000
+    CODE              Offs=000E50  Size=000077  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(lult.o):
-    CODE              Offs=000E9A  Size=000006  Align=00001  Fill=0000
+    CODE              Offs=000EC7  Size=000006  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(makebool.o):
-    CODE              Offs=000EA0  Size=00002C  Align=00001  Fill=0000
+    CODE              Offs=000ECD  Size=00002C  Align=00001  Fill=0000
+/Volumes/Zort/git/cc65/lib/cx16.lib(memset.o):
+    CODE              Offs=000EF9  Size=00005D  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(mktime.o):
-    CODE              Offs=000ECC  Size=000257  Align=00001  Fill=0000
+    CODE              Offs=000F56  Size=000257  Align=00001  Fill=0000
     BSS               Offs=000038  Size=000005  Align=00001  Fill=0000
     DATA              Offs=00005D  Size=000024  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(mod.o):
-    CODE              Offs=001123  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=0011AD  Size=000011  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(mul.o):
-    CODE              Offs=001134  Size=000045  Align=00001  Fill=0000
+    CODE              Offs=0011BE  Size=000045  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(mul8.o):
-    CODE              Offs=001179  Size=00003A  Align=00001  Fill=0000
+    CODE              Offs=001203  Size=00003A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(negabs.o):
-    CODE              Offs=0011B3  Size=000012  Align=00001  Fill=0000
+    CODE              Offs=00123D  Size=000012  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(or.o):
-    CODE              Offs=0011C5  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=00124F  Size=000011  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(oserror.o):
-    CODE              Offs=0011D6  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=001260  Size=000016  Align=00001  Fill=0000
     RODATA            Offs=00010D  Size=00005A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(popa.o):
-    CODE              Offs=0011EC  Size=00000A  Align=00001  Fill=0000
+    CODE              Offs=001276  Size=00000A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(popptr1.o):
-    CODE              Offs=0011F6  Size=00000E  Align=00001  Fill=0000
+    CODE              Offs=001280  Size=00000E  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(printf.o):
-    CODE              Offs=001204  Size=000033  Align=00001  Fill=0000
+    CODE              Offs=00128E  Size=000033  Align=00001  Fill=0000
     BSS               Offs=00003D  Size=000001  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(push1.o):
-    CODE              Offs=001237  Size=000005  Align=00001  Fill=0000
+    CODE              Offs=0012C1  Size=000005  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(pusha.o):
-    CODE              Offs=00123C  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=0012C6  Size=000016  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(pushax.o):
-    CODE              Offs=001252  Size=00001A  Align=00001  Fill=0000
+    CODE              Offs=0012DC  Size=00001A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(pushwsp.o):
-    CODE              Offs=00126C  Size=00001C  Align=00001  Fill=0000
+    CODE              Offs=0012F6  Size=00001C  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(rand.o):
-    CODE              Offs=001288  Size=000034  Align=00001  Fill=0000
+    CODE              Offs=001312  Size=000034  Align=00001  Fill=0000
     DATA              Offs=000081  Size=000004  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(randomize.o):
-    CODE              Offs=0012BC  Size=000006  Align=00001  Fill=0000
+    CODE              Offs=001346  Size=000006  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(return0.o):
-    CODE              Offs=0012C2  Size=000004  Align=00001  Fill=0000
+    CODE              Offs=00134C  Size=000004  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(rwcommon.o):
-    CODE              Offs=0012C6  Size=00001A  Align=00001  Fill=0000
+    CODE              Offs=001350  Size=00001A  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(shelp.o):
-    CODE              Offs=0012E0  Size=000020  Align=00001  Fill=0000
+    CODE              Offs=00136A  Size=000020  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(shrax2.o):
-    CODE              Offs=001300  Size=00000B  Align=00001  Fill=0000
+    CODE              Offs=00138A  Size=00000B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(staspidx.o):
-    CODE              Offs=00130B  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=001395  Size=000016  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(staxsp.o):
-    CODE              Offs=001321  Size=00000B  Align=00001  Fill=0000
+    CODE              Offs=0013AB  Size=00000B  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(steaxspi.o):
-    CODE              Offs=00132C  Size=000022  Align=00001  Fill=0000
+    CODE              Offs=0013B6  Size=000022  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(strlen.o):
-    CODE              Offs=00134E  Size=000016  Align=00001  Fill=0000
+    CODE              Offs=0013D8  Size=000016  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(strlower.o):
-    CODE              Offs=001364  Size=000027  Align=00001  Fill=0000
+    CODE              Offs=0013EE  Size=000027  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(timezone.o):
     DATA              Offs=000085  Size=00000F  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(tmcommon.o):
-    CODE              Offs=00138B  Size=00000D  Align=00001  Fill=0000
+    CODE              Offs=001415  Size=00000D  Align=00001  Fill=0000
     DATA              Offs=000094  Size=000012  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(udiv.o):
-    CODE              Offs=001398  Size=00004F  Align=00001  Fill=0000
+    CODE              Offs=001422  Size=00004F  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(umod.o):
-    CODE              Offs=0013E7  Size=000011  Align=00001  Fill=0000
+    CODE              Offs=001471  Size=000011  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(vfprintf.o):
-    CODE              Offs=0013F8  Size=000060  Align=00001  Fill=0000
+    CODE              Offs=001482  Size=000060  Align=00001  Fill=0000
     DATA              Offs=0000A6  Size=000008  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(write.o):
-    CODE              Offs=001458  Size=000052  Align=00001  Fill=0000
+    CODE              Offs=0014E2  Size=000052  Align=00001  Fill=0000
     ONCE              Offs=000027  Size=000011  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(zerobss.o):
-    CODE              Offs=0014AA  Size=000023  Align=00001  Fill=0000
+    CODE              Offs=001534  Size=000023  Align=00001  Fill=0000
 /Volumes/Zort/git/cc65/lib/cx16.lib(zeropage.o):
     ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
 
@@ -234,12 +238,12 @@ ZEROPAGE              000022  00003B  00001A  00001
 LOADADDR              0007FF  000800  000002  00001
 EXEHDR                000801  00080C  00000C  00001
 STARTUP               00080D  00082D  000021  00001
-CODE                  00082E  001CFA  0014CD  00001
-RODATA                001CFB  001E61  000167  00001
-DATA                  001E62  001F0F  0000AE  00001
-INIT                  001F10  001F11  000002  00001
-BSS                   001F12  001F4F  00003E  00001
-ONCE                  001F12  001F4D  00003C  00001
+CODE                  00082E  001D84  001557  00001
+RODATA                001D85  001EEB  000167  00001
+DATA                  001EEC  001F99  0000AE  00001
+INIT                  001F9A  001F9B  000002  00001
+BSS                   001F9C  001FD9  00003E  00001
+ONCE                  001F9C  001FD7  00003C  00001
 
 
 Exports list by name:
@@ -250,85 +254,86 @@ CLRCH                     00FFCC RLA    ENTROPY_GET               00FECF RLA
 OPEN                      00FFC0 RLA    PLOT                      00FFF0 RLA    
 RDTIM                     00FFDE RLA    READST                    00FFB7 RLA    
 SETLFS                    00FFBA RLA    SETTIM                    00FFDB RLA    
-TM                        001EF6 RLA    __BSS_RUN__               001F12 RLA    
+TM                        001F80 RLA    __BSS_RUN__               001F9C RLA    
 __BSS_SIZE__              00003E REA    __CONSTRUCTOR_COUNT__     000002 REA    
-__CONSTRUCTOR_TABLE__     001F4A RLA    __DESTRUCTOR_COUNT__      000000 REA    
-__DESTRUCTOR_TABLE__      001E62 RLA    __EXEHDR__                000001 REA    
+__CONSTRUCTOR_TABLE__     001FD4 RLA    __DESTRUCTOR_COUNT__      000000 REA    
+__DESTRUCTOR_TABLE__      001EEC RLA    __EXEHDR__                000001 REA    
 __HEADER_LAST__           00080D RLA    __HIMEM__                 009F00 REA    
 __LOADADDR__              000001 REA    __MAIN_SIZE__             0096F3 REA    
-__MAIN_START__            00080D RLA    __ONCE_RUN__              001F12 RLA    
+__MAIN_START__            00080D RLA    __ONCE_RUN__              001F9C RLA    
 __STACKSIZE__             000800 REA    __STARTUP__               000001 REA    
-___directerrno            000D41 RLA    ___errno                  001F46 RLA    
-___mappederrno            000D4A RLA    ___oserror                001F1A RLA    
-___osmaperrno             001A04 RLA    ___randomize              001AEA RLA    
-___seterrno               0010FA RLA    __ctype                   001D7D RLA    
-__ctypeidx                001D88 RLA    __hextab                  001D59 RLA    
-__longminstr              001D69 RLA    __printf                  000E4A RLA    
-__sys                     001103 RLA    __tz                      001EE7 RLA    
-_clock                    0011B9 RLA    _clock_gettime            001391 RLA    
-_clrscr                   0011C1 RLA    _cputc                    00120D RLA    
-_cputsxy                  00126A RLA    _creature_dump            00094E RLA    
-_creature_extract         00093D RLA    _creature_init            0009F7 RLA    
-_creature_randomWalk      000A68 RLA    _creature_show            0009A6 RLA    
-_div                      0012F7 RLA    _fwrite                   00131A RLA    
-_gotoxy                   0013E0 RLA    _ltoa                     0015D6 RLA    
-_main                     00084E RLA    _map_show                 000CDA RLA    
-_map_show_cell            000C54 RLA    _mktime                   001785 RLA    
-_printf                   001A32 RLA    _rand                     001AC2 RLA    
-_srand                    001AB6 RLA    _stdout                   001E7C RLA    
-_strlen                   001B7C RLA    _strlower                 001B92 RLA    
-_textcolor                0011D2 RLA    _ultoa                    001615 RLA    
-_vfprintf                 001C5D RLA    _write                    001C86 RLA    
-addysp                    001160 RLA    addysp1                   00115F RLA    
-aslax1                    00116D RLA    aslax2                    001175 RLA    
-aslax3                    001180 RLA    axlong                    00118E RLA    
-axulong                   001194 RLA    boolult                   0016ED RLA    
-callmain                  00119B RLA    ctypemaskdirect           00128B RLA    
-decaxy                    0012A5 RLA    decsp2                    0012AE RLA    
-decsp3                    0012BB RLA    decsp4                    0012C8 RLA    
-decsp6                    0012D5 RLA    donelib                   0011FC RLA    
-fdtab                     001EAC RLA    getlop                    001660 RLA    
-gotoxy                    0013DD RLA    incsp1                    0013EC RLA    
-incsp2                    0013FA RLA    incsp3                    001408 RLA    
-incsp4                    00140D RLA    incsp5                    001412 RLA    
-incsp6                    001417 RLA    initclock                 0011B2  LAI   
-initlib                   001F12 RLA    initstdout                001F39  LAI   
-jmpvec                    001EBC RLA    ldax0sp                   00147B RLA    
-ldaxysp                   00147D RLA    ldeaxysp                  001486 RLA    
-load_jiffy                001BB9 RLA    mul8x16                   0019A9 RLA    
-mul8x16a                  0019B3 RLA    negax                     0019E5 RLA    
-negeax                    00150C RLA    plot                      001239 RLA    
-popa                      001A1A RLA    popax                     0013F3 RLA    
-poplsargs                 001548 RLA    popptr1                   001A24 RLA    
-popsargsudiv16            001B0E RLA    ptr1                      00002A RLZ    
+___bzero                  001727 RLA    ___directerrno            000D63 RLA    
+___errno                  001FD0 RLA    ___mappederrno            000D6C RLA    
+___oserror                001FA4 RLA    ___osmaperrno             001A8E RLA    
+___randomize              001B74 RLA    ___seterrno               00111C RLA    
+__ctype                   001E07 RLA    __ctypeidx                001E12 RLA    
+__hextab                  001DE3 RLA    __longminstr              001DF3 RLA    
+__printf                  000E6C RLA    __sys                     001125 RLA    
+__tz                      001F71 RLA    _clock                    0011DB RLA    
+_clock_gettime            0013B3 RLA    _clrscr                   0011E3 RLA    
+_cputc                    00122F RLA    _cputsxy                  00128C RLA    
+_creature_extract         00094F RLA    _creature_go              000A7A RLA    
+_creature_init            000A09 RLA    _creature_memwipe         00092A RLA    
+_creature_show            0009B8 RLA    _div                      001319 RLA    
+_fwrite                   00133C RLA    _gotoxy                   001402 RLA    
+_ltoa                     001603 RLA    _main                     000856 RLA    
+_map_show                 000CFC RLA    _map_show_cell            000C76 RLA    
+_mktime                   00180F RLA    _printf                   001ABC RLA    
+_rand                     001B4C RLA    _srand                    001B40 RLA    
+_stdout                   001F06 RLA    _strlen                   001C06 RLA    
+_strlower                 001C1C RLA    _textcolor                0011F4 RLA    
+_ultoa                    001642 RLA    _vfprintf                 001CE7 RLA    
+_write                    001D10 RLA    addysp                    001182 RLA    
+addysp1                   001181 RLA    aslax1                    00118F RLA    
+aslax2                    001197 RLA    aslax3                    0011A2 RLA    
+axlong                    0011B0 RLA    axulong                   0011B6 RLA    
+boolult                   00171A RLA    callmain                  0011BD RLA    
+ctypemaskdirect           0012AD RLA    decsp1                    0012C7 RLA    
+decsp2                    0012D0 RLA    decsp3                    0012DD RLA    
+decsp4                    0012EA RLA    decsp6                    0012F7 RLA    
+donelib                   00121E RLA    fdtab                     001F36 RLA    
+getlop                    00168D RLA    gotoxy                    0013FF RLA    
+incaxy                    001410 RLA    incsp1                    001419 RLA    
+incsp2                    001427 RLA    incsp3                    001435 RLA    
+incsp4                    00143A RLA    incsp5                    00143F RLA    
+incsp6                    001444 RLA    initclock                 0011D4  LAI   
+initlib                   001F9C RLA    initstdout                001FC3  LAI   
+jmpvec                    001F46 RLA    ldax0sp                   0014A8 RLA    
+ldaxysp                   0014AA RLA    ldeaxysp                  0014B3 RLA    
+load_jiffy                001C43 RLA    mul8x16                   001A33 RLA    
+mul8x16a                  001A3D RLA    negax                     001A6F RLA    
+negeax                    001539 RLA    plot                      00125B RLA    
+popa                      001AA4 RLA    popax                     001420 RLA    
+poplsargs                 001575 RLA    popptr1                   001AAE RLA    
+popsargsudiv16            001B98 RLA    ptr1                      00002A RLZ    
 ptr2                      00002C RLZ    ptr3                      00002E RLZ    
-ptr4                      000030 RLZ    push1                     001A65 RLA    
-pusha                     001A6E RLA    pusha0                    001A82 RLA    
-pushax                    001A84 RLA    pusheax                   001531 RLA    
-pushw0sp                  001A9A RLA    pushwysp                  001A9C RLA    
-regbank                   000036 RLZ    return0                   001AF0 RLA    
-rwcommon                  001AF4 RLA    shrax2                    001B2E RLA    
+ptr4                      000030 RLZ    push1                     001AEF RLA    
+pusha                     001AF8 RLA    pusha0                    001B0C RLA    
+pushax                    001B0E RLA    pusheax                   00155E RLA    
+pushw0sp                  001B24 RLA    pushwysp                  001B26 RLA    
+regbank                   000036 RLZ    return0                   001B7A RLA    
+rwcommon                  001B7E RLA    shrax2                    001BB8 RLA    
 sp                        000022 RLZ    sreg                      000024 RLZ    
-staspidx                  001B39 RLA    stax0sp                   001B4F RLA    
-staxysp                   001B51 RLA    steaxspidx                001B5A RLA    
+staspidx                  001BC3 RLA    stax0sp                   001BD9 RLA    
+staxysp                   001BDB RLA    steaxspidx                001BE4 RLA    
 tmp1                      000032 RLZ    tmp2                      000033 RLZ    
 tmp3                      000034 RLZ    tmp4                      000035 RLZ    
-tosaddax                  001149 RLA    tosaddeax                 001422 RLA    
-tosdivax                  0012E4 RLA    tosdiveax                 00149D RLA    
-toslcmp                   001440 RLA    tosmoda0                  001951 RLA    
-tosmul0ax                 0014B3 RLA    tosora0                   0019F3 RLA    
-tossubeax                 00159E RLA    tosudivax                 001BC8 RLA    
-tosulteax                 0016C8 RLA    tosumodax                 001C17 RLA    
-tosumula0                 0019A7 RLA    tosumulax                 001962 RLA    
-tosumuleax                0014B7 RLA    udiv16                    001BD7 RLA    
-udiv32                    001683 RLA    zerobss                   001CD8 RLA    
+tosaddax                  00116B RLA    tosaddeax                 00144F RLA    
+tosdivax                  001306 RLA    tosdiveax                 0014CA RLA    
+toslcmp                   00146D RLA    tosmoda0                  0019DB RLA    
+tosmul0ax                 0014E0 RLA    tosora0                   001A7D RLA    
+tossubeax                 0015CB RLA    tosudivax                 001C52 RLA    
+tosulteax                 0016F5 RLA    tosumodax                 001CA1 RLA    
+tosumula0                 001A31 RLA    tosumulax                 0019EC RLA    
+tosumuleax                0014E4 RLA    udiv16                    001C61 RLA    
+udiv32                    0016B0 RLA    zerobss                   001D62 RLA    
 
 
 
 Exports list by value:
 ----------------------
-__DESTRUCTOR_COUNT__      000000 REA    __LOADADDR__              000001 REA    
-__STARTUP__               000001 REA    __EXEHDR__                000001 REA    
+__DESTRUCTOR_COUNT__      000000 REA    __EXEHDR__                000001 REA    
+__STARTUP__               000001 REA    __LOADADDR__              000001 REA    
 __CONSTRUCTOR_COUNT__     000002 REA    sp                        000022 RLZ    
 sreg                      000024 RLZ    ptr1                      00002A RLZ    
 ptr2                      00002C RLZ    ptr3                      00002E RLZ    
@@ -336,68 +341,69 @@ ptr4                      000030 RLZ    tmp1                      000032 RLZ
 tmp2                      000033 RLZ    tmp3                      000034 RLZ    
 tmp4                      000035 RLZ    regbank                   000036 RLZ    
 __BSS_SIZE__              00003E REA    __STACKSIZE__             000800 REA    
-__HEADER_LAST__           00080D RLA    __MAIN_START__            00080D RLA    
-_main                     00084E RLA    _creature_extract         00093D RLA    
-_creature_dump            00094E RLA    _creature_show            0009A6 RLA    
-_creature_init            0009F7 RLA    _creature_randomWalk      000A68 RLA    
-_map_show_cell            000C54 RLA    _map_show                 000CDA RLA    
-___directerrno            000D41 RLA    ___mappederrno            000D4A RLA    
-__printf                  000E4A RLA    ___seterrno               0010FA RLA    
-__sys                     001103 RLA    tosaddax                  001149 RLA    
-addysp1                   00115F RLA    addysp                    001160 RLA    
-aslax1                    00116D RLA    aslax2                    001175 RLA    
-aslax3                    001180 RLA    axlong                    00118E RLA    
-axulong                   001194 RLA    callmain                  00119B RLA    
-initclock                 0011B2  LAI   _clock                    0011B9 RLA    
-_clrscr                   0011C1 RLA    _textcolor                0011D2 RLA    
-donelib                   0011FC RLA    _cputc                    00120D RLA    
-plot                      001239 RLA    _cputsxy                  00126A RLA    
-ctypemaskdirect           00128B RLA    decaxy                    0012A5 RLA    
-decsp2                    0012AE RLA    decsp3                    0012BB RLA    
-decsp4                    0012C8 RLA    decsp6                    0012D5 RLA    
-tosdivax                  0012E4 RLA    _div                      0012F7 RLA    
-_fwrite                   00131A RLA    _clock_gettime            001391 RLA    
-gotoxy                    0013DD RLA    _gotoxy                   0013E0 RLA    
-incsp1                    0013EC RLA    popax                     0013F3 RLA    
-incsp2                    0013FA RLA    incsp3                    001408 RLA    
-incsp4                    00140D RLA    incsp5                    001412 RLA    
-incsp6                    001417 RLA    tosaddeax                 001422 RLA    
-toslcmp                   001440 RLA    ldax0sp                   00147B RLA    
-ldaxysp                   00147D RLA    ldeaxysp                  001486 RLA    
-tosdiveax                 00149D RLA    tosmul0ax                 0014B3 RLA    
-tosumuleax                0014B7 RLA    negeax                    00150C RLA    
-pusheax                   001531 RLA    poplsargs                 001548 RLA    
-tossubeax                 00159E RLA    _ltoa                     0015D6 RLA    
-_ultoa                    001615 RLA    getlop                    001660 RLA    
-udiv32                    001683 RLA    tosulteax                 0016C8 RLA    
-boolult                   0016ED RLA    _mktime                   001785 RLA    
-tosmoda0                  001951 RLA    tosumulax                 001962 RLA    
-tosumula0                 0019A7 RLA    mul8x16                   0019A9 RLA    
-mul8x16a                  0019B3 RLA    negax                     0019E5 RLA    
-tosora0                   0019F3 RLA    ___osmaperrno             001A04 RLA    
-popa                      001A1A RLA    popptr1                   001A24 RLA    
-_printf                   001A32 RLA    push1                     001A65 RLA    
-pusha                     001A6E RLA    pusha0                    001A82 RLA    
-pushax                    001A84 RLA    pushw0sp                  001A9A RLA    
-pushwysp                  001A9C RLA    _srand                    001AB6 RLA    
-_rand                     001AC2 RLA    ___randomize              001AEA RLA    
-return0                   001AF0 RLA    rwcommon                  001AF4 RLA    
-popsargsudiv16            001B0E RLA    shrax2                    001B2E RLA    
-staspidx                  001B39 RLA    stax0sp                   001B4F RLA    
-staxysp                   001B51 RLA    steaxspidx                001B5A RLA    
-_strlen                   001B7C RLA    _strlower                 001B92 RLA    
-load_jiffy                001BB9 RLA    tosudivax                 001BC8 RLA    
-udiv16                    001BD7 RLA    tosumodax                 001C17 RLA    
-_vfprintf                 001C5D RLA    _write                    001C86 RLA    
-zerobss                   001CD8 RLA    __hextab                  001D59 RLA    
-__longminstr              001D69 RLA    __ctype                   001D7D RLA    
-__ctypeidx                001D88 RLA    __DESTRUCTOR_TABLE__      001E62 RLA    
-_stdout                   001E7C RLA    fdtab                     001EAC RLA    
-jmpvec                    001EBC RLA    __tz                      001EE7 RLA    
-TM                        001EF6 RLA    __BSS_RUN__               001F12 RLA    
-__ONCE_RUN__              001F12 RLA    initlib                   001F12 RLA    
-___oserror                001F1A RLA    initstdout                001F39  LAI   
-___errno                  001F46 RLA    __CONSTRUCTOR_TABLE__     001F4A RLA    
+__MAIN_START__            00080D RLA    __HEADER_LAST__           00080D RLA    
+_main                     000856 RLA    _creature_memwipe         00092A RLA    
+_creature_extract         00094F RLA    _creature_show            0009B8 RLA    
+_creature_init            000A09 RLA    _creature_go              000A7A RLA    
+_map_show_cell            000C76 RLA    _map_show                 000CFC RLA    
+___directerrno            000D63 RLA    ___mappederrno            000D6C RLA    
+__printf                  000E6C RLA    ___seterrno               00111C RLA    
+__sys                     001125 RLA    tosaddax                  00116B RLA    
+addysp1                   001181 RLA    addysp                    001182 RLA    
+aslax1                    00118F RLA    aslax2                    001197 RLA    
+aslax3                    0011A2 RLA    axlong                    0011B0 RLA    
+axulong                   0011B6 RLA    callmain                  0011BD RLA    
+initclock                 0011D4  LAI   _clock                    0011DB RLA    
+_clrscr                   0011E3 RLA    _textcolor                0011F4 RLA    
+donelib                   00121E RLA    _cputc                    00122F RLA    
+plot                      00125B RLA    _cputsxy                  00128C RLA    
+ctypemaskdirect           0012AD RLA    decsp1                    0012C7 RLA    
+decsp2                    0012D0 RLA    decsp3                    0012DD RLA    
+decsp4                    0012EA RLA    decsp6                    0012F7 RLA    
+tosdivax                  001306 RLA    _div                      001319 RLA    
+_fwrite                   00133C RLA    _clock_gettime            0013B3 RLA    
+gotoxy                    0013FF RLA    _gotoxy                   001402 RLA    
+incaxy                    001410 RLA    incsp1                    001419 RLA    
+popax                     001420 RLA    incsp2                    001427 RLA    
+incsp3                    001435 RLA    incsp4                    00143A RLA    
+incsp5                    00143F RLA    incsp6                    001444 RLA    
+tosaddeax                 00144F RLA    toslcmp                   00146D RLA    
+ldax0sp                   0014A8 RLA    ldaxysp                   0014AA RLA    
+ldeaxysp                  0014B3 RLA    tosdiveax                 0014CA RLA    
+tosmul0ax                 0014E0 RLA    tosumuleax                0014E4 RLA    
+negeax                    001539 RLA    pusheax                   00155E RLA    
+poplsargs                 001575 RLA    tossubeax                 0015CB RLA    
+_ltoa                     001603 RLA    _ultoa                    001642 RLA    
+getlop                    00168D RLA    udiv32                    0016B0 RLA    
+tosulteax                 0016F5 RLA    boolult                   00171A RLA    
+___bzero                  001727 RLA    _mktime                   00180F RLA    
+tosmoda0                  0019DB RLA    tosumulax                 0019EC RLA    
+tosumula0                 001A31 RLA    mul8x16                   001A33 RLA    
+mul8x16a                  001A3D RLA    negax                     001A6F RLA    
+tosora0                   001A7D RLA    ___osmaperrno             001A8E RLA    
+popa                      001AA4 RLA    popptr1                   001AAE RLA    
+_printf                   001ABC RLA    push1                     001AEF RLA    
+pusha                     001AF8 RLA    pusha0                    001B0C RLA    
+pushax                    001B0E RLA    pushw0sp                  001B24 RLA    
+pushwysp                  001B26 RLA    _srand                    001B40 RLA    
+_rand                     001B4C RLA    ___randomize              001B74 RLA    
+return0                   001B7A RLA    rwcommon                  001B7E RLA    
+popsargsudiv16            001B98 RLA    shrax2                    001BB8 RLA    
+staspidx                  001BC3 RLA    stax0sp                   001BD9 RLA    
+staxysp                   001BDB RLA    steaxspidx                001BE4 RLA    
+_strlen                   001C06 RLA    _strlower                 001C1C RLA    
+load_jiffy                001C43 RLA    tosudivax                 001C52 RLA    
+udiv16                    001C61 RLA    tosumodax                 001CA1 RLA    
+_vfprintf                 001CE7 RLA    _write                    001D10 RLA    
+zerobss                   001D62 RLA    __hextab                  001DE3 RLA    
+__longminstr              001DF3 RLA    __ctype                   001E07 RLA    
+__ctypeidx                001E12 RLA    __DESTRUCTOR_TABLE__      001EEC RLA    
+_stdout                   001F06 RLA    fdtab                     001F36 RLA    
+jmpvec                    001F46 RLA    __tz                      001F71 RLA    
+TM                        001F80 RLA    __ONCE_RUN__              001F9C RLA    
+__BSS_RUN__               001F9C RLA    initlib                   001F9C RLA    
+___oserror                001FA4 RLA    initstdout                001FC3  LAI   
+___errno                  001FD0 RLA    __CONSTRUCTOR_TABLE__     001FD4 RLA    
 __MAIN_SIZE__             0096F3 REA    __HIMEM__                 009F00 REA    
 ENTROPY_GET               00FECF RLA    CLOCK_GET_DATE_TIME       00FF50 RLA    
 READST                    00FFB7 RLA    SETLFS                    00FFBA RLA    
@@ -470,6 +476,8 @@ __STACKSIZE__ ([linker generated]):
     [linker generated]        /Volumes/Zort/git/cc65/cfg/cx16.cfg:15
 __STARTUP__ (crt0.o):
     main.o                    main.s:13
+___bzero (memset.o):
+    creature.o                creature.s:524
 ___directerrno (_directerrno.o):
     write.o                   /Volumes/Zort/git/cc65/asminc/errno.inc:10
 ___errno (errno.o):
@@ -483,7 +491,7 @@ ___oserror (_oserror.o):
 ___osmaperrno (oserror.o):
     _mappederrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:8
 ___randomize (randomize.o):
-    main.o                    main.s:15
+    main.o                    main.s:16
 ___seterrno (_seterrno.o):
     _mappederrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:9
     _directerrno.o            /Volumes/Zort/git/cc65/asminc/errno.inc:9
@@ -511,42 +519,43 @@ _clrscr (clrscr.o):
 _cputc (cputc.o):
     cputs.o                   conio/cputs.s:9
     map.o                     map.s:15
-    creature.o                creature.s:15
+    creature.o                creature.s:16
 _cputsxy (cputs.o):
     map.o                     map.s:16
-_creature_dump (creature.o):
-    main.o                    main.s:17
 _creature_extract (creature.o):
-    main.o                    main.s:16
-_creature_init (creature.o):
-    main.o                    main.s:19
-_creature_randomWalk (creature.o):
-    main.o                    main.s:20
-_creature_show (creature.o):
     main.o                    main.s:18
+_creature_go (creature.o):
+    main.o                    main.s:21
+_creature_init (creature.o):
+    main.o                    main.s:20
+_creature_memwipe (creature.o):
+    main.o                    main.s:17
+_creature_show (creature.o):
+    main.o                    main.s:19
 _div (divt.o):
     mktime.o                  common/mktime.s:14
 _fwrite (fwrite.o):
     vfprintf.o                common/vfprintf.s:10
 _gotoxy (gotoxy.o):
     map.o                     map.s:14
-    creature.o                creature.s:14
+    creature.o                creature.s:15
 _ltoa (ltoa.o):
     _printf.o                 common/_printf.s:12
 _main (main.o):
     callmain.o                runtime/callmain.s:11
 _map_show (map.o):
-    main.o                    main.s:22
+    main.o                    main.s:23
 _map_show_cell (map.o):
-    main.o                    main.s:21
+    main.o                    main.s:22
 _mktime (mktime.o):
     gettime.o                 /Volumes/Zort/git/cc65/asminc/time.inc:68
 _printf (printf.o):
     system.o                  system.s:13
     test.o                    test.s:13
-    creature.o                creature.s:17
+    creature.o                creature.s:18
 _rand (rand.o):
     creature.o                creature.s:13
+    main.o                    main.s:15
 _srand (rand.o):
     randomize.o               cx16/randomize.s:10
 _stdout (_file.o):
@@ -557,7 +566,7 @@ _strlower (strlower.o):
     _printf.o                 common/_printf.s:13
 _textcolor (color.o):
     map.o                     map.s:17
-    creature.o                creature.s:16
+    creature.o                creature.s:17
 _ultoa (ltoa.o):
     _printf.o                 common/_printf.s:12
 _vfprintf (vfprintf.o):
@@ -578,11 +587,11 @@ addysp1 (addysp.o):
     lmul.o                    runtime/lmul.s:9
     ladd.o                    runtime/ladd.s:8
 aslax1 (aslax1.o):
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 aslax2 (aslax2.o):
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 aslax3 (aslax3.o):
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 axlong (axlong.o):
     _printf.o                 common/_printf.s:11
 axulong (axlong.o):
@@ -594,18 +603,18 @@ callmain (callmain.o):
     crt0.o                    cx16/crt0.s:9
 ctypemaskdirect (ctypemask.o):
     strlower.o                common/strlower.s:14
-decaxy (decaxy.o):
-    creature.o                creature.s:475
+decsp1 (decsp1.o):
+    creature.o                creature.s:524
+    creature.o                creature.s:524
 decsp2 (decsp2.o):
     map.o                     map.s:150
 decsp3 (decsp3.o):
-    creature.o                creature.s:475
-    main.o                    main.s:136
+    creature.o                creature.s:524
 decsp4 (decsp4.o):
     lpush.o                   runtime/lpush.s:12
 decsp6 (decsp6.o):
     _printf.o                 common/_printf.s:11
-    main.o                    main.s:136
+    main.o                    main.s:122
 donelib (condes.o):
     crt0.o                    cx16/crt0.s:8
 fdtab (filedes.o):
@@ -615,47 +624,55 @@ getlop (ludiv.o):
 gotoxy (gotoxy.o):
     cputs.o                   conio/cputs.s:9
     cputc.o                   cx16/cputc.s:11
+incaxy (incaxy.o):
+    creature.o                creature.s:524
 incsp1 (incsp1.o):
     gettime.o                 cx16/gettime.s:10
+    creature.o                creature.s:524
+    creature.o                creature.s:524
 incsp2 (incsp2.o):
     staspidx.o                runtime/staspidx.s:8
     popptr1.o                 runtime/popptr1.s:8
     map.o                     map.s:150
+    creature.o                creature.s:524
 incsp3 (incsp3.o):
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    main.o                    main.s:122
 incsp4 (incsp4.o):
     lcmp.o                    runtime/lcmp.s:9
     DNA.o                     DNA.s:29
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 incsp5 (incsp5.o):
     map.o                     map.s:150
 incsp6 (incsp6.o):
     fwrite.o                  common/fwrite.s:11
     vfprintf.o                common/vfprintf.s:9
     timer.o                   timer.s:93
-    main.o                    main.s:136
+    main.o                    main.s:122
 initlib (condes.o):
     crt0.o                    cx16/crt0.s:8
 jmpvec (jmpvec.o):
     _sys.o                    common/_sys.s:8
 ldax0sp (ldaxsp.o):
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    main.o                    main.s:122
 ldaxysp (ldaxsp.o):
     fwrite.o                  common/fwrite.s:11
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
     timer.o                   timer.s:93
-    main.o                    main.s:136
+    main.o                    main.s:122
 ldeaxysp (ldeaxysp.o):
     timer.o                   timer.s:93
 load_jiffy (tmcommon.o):
@@ -681,6 +698,7 @@ popax (incsp2.o):
     ltoa.o                    common/ltoa.s:9
     _printf.o                 common/_printf.s:11
     shelp.o                   runtime/shelp.s:11
+    memset.o                  common/memset.s:19
 poplsargs (lshelp.o):
     ldiv.o                    runtime/ldiv.s:11
 popptr1 (popptr1.o):
@@ -712,6 +730,7 @@ ptr1 (zeropage.o):
     popptr1.o                 runtime/popptr1.s:9
     mul8.o                    runtime/mul8.s:10
     mul.o                     runtime/mul.s:10
+    memset.o                  common/memset.s:20
     ludiv.o                   runtime/ludiv.s:10
     lshelp.o                  runtime/lshelp.s:12
     lmul.o                    runtime/lmul.s:10
@@ -728,11 +747,13 @@ ptr2 (zeropage.o):
     ltoa.o                    common/ltoa.s:11
     _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:12
     mktime.o                  common/mktime.s:15
+    memset.o                  common/memset.s:20
     ludiv.o                   runtime/ludiv.s:10
 ptr3 (zeropage.o):
     rwcommon.o                cbm/rwcommon.s:10
     write.o                   cbm/write.s:11
     ltoa.o                    common/ltoa.s:11
+    memset.o                  common/memset.s:20
     ludiv.o                   runtime/ludiv.s:10
     lshelp.o                  runtime/lshelp.s:12
     lmul.o                    runtime/lmul.s:10
@@ -752,22 +773,22 @@ push1 (push1.o):
 pusha (pusha.o):
     map.o                     map.s:150
     map.o                     map.s:150
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
     timer.o                   timer.s:93
-    main.o                    main.s:136
+    main.o                    main.s:122
 pusha0 (pushax.o):
     push1.o                   runtime/push1.s:8
     fwrite.o                  common/fwrite.s:11
     mktime.o                  common/mktime.s:13
     map.o                     map.s:150
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
 pushax (pushax.o):
     fwrite.o                  common/fwrite.s:11
     callmain.o                runtime/callmain.s:11
@@ -779,12 +800,15 @@ pushax (pushax.o):
     test.o                    test.s:39
     map.o                     map.s:150
     DNA.o                     DNA.s:29
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    creature.o                creature.s:524
     timer.o                   timer.s:93
+    main.o                    main.s:122
 pusheax (lpush.o):
     _printf.o                 common/_printf.s:11
     mktime.o                  common/mktime.s:13
@@ -792,11 +816,11 @@ pusheax (lpush.o):
     timer.o                   timer.s:93
     timer.o                   timer.s:93
 pushw0sp (pushwsp.o):
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 pushwysp (pushwsp.o):
     fwrite.o                  common/fwrite.s:11
     vfprintf.o                common/vfprintf.s:9
-    creature.o                creature.s:475
+    creature.o                creature.s:524
 regbank (zeropage.o):
     _printf.o                 /Volumes/Zort/git/cc65/asminc/zeropage.inc:14
 return0 (return0.o):
@@ -821,6 +845,7 @@ sp (zeropage.o):
     popptr1.o                 runtime/popptr1.s:9
     popa.o                    runtime/popa.s:8
     or.o                      runtime/or.s:10
+    memset.o                  common/memset.s:20
     ludiv.o                   runtime/ludiv.s:10
     lpush.o                   runtime/lpush.s:13
     lmul.o                    runtime/lmul.s:10
@@ -832,6 +857,7 @@ sp (zeropage.o):
     decsp6.o                  runtime/decsp6.s:8
     decsp3.o                  runtime/decsp3.s:8
     decsp2.o                  runtime/decsp2.s:8
+    decsp1.o                  runtime/decsp1.s:8
     crt0.o                    /Volumes/Zort/git/cc65/asminc/zeropage.inc:11
     add.o                     runtime/add.s:12
     map.o                     map.s:10
@@ -862,13 +888,12 @@ sreg (zeropage.o):
     creature.o                creature.s:10
     timer.o                   timer.s:10
 staspidx (staspidx.o):
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
 stax0sp (staxsp.o):
-    creature.o                creature.s:475
-    main.o                    main.s:136
+    creature.o                creature.s:524
 staxysp (staxsp.o):
-    main.o                    main.s:136
+    main.o                    main.s:122
 steaxspidx (steaxspi.o):
     gettime.o                 cx16/gettime.s:10
 tmp1 (zeropage.o):
@@ -886,7 +911,7 @@ tmp1 (zeropage.o):
     lshelp.o                  runtime/lshelp.s:12
     ldiv.o                    runtime/ldiv.s:12
     ladd.o                    runtime/ladd.s:9
-    decaxy.o                  runtime/decaxy.s:8
+    incaxy.o                  runtime/incaxy.s:8
     color.o                   cx16/color.s:11
     aslax3.o                  runtime/aslax3.s:8
     aslax2.o                  runtime/aslax2.s:8
@@ -919,13 +944,14 @@ tosdiveax (ldiv.o):
 toslcmp (lcmp.o):
     lult.o                    runtime/lult.s:8
 tosmoda0 (mod.o):
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
+    main.o                    main.s:122
 tosmul0ax (lmul.o):
     gettime.o                 cx16/gettime.s:10
 tosora0 (or.o):
-    creature.o                creature.s:475
-    creature.o                creature.s:475
+    creature.o                creature.s:524
+    creature.o                creature.s:524
 tossubeax (lsub.o):
     mktime.o                  common/mktime.s:14
 tosudivax (udiv.o):

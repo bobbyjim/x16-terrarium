@@ -6,6 +6,23 @@
 #include "common.h"
 #include "creature.h"
 
+#define     GROUP_1_START_BANK          2
+#define     GROUP_1_COUNT               128
+#define     GROUP_1_CREATURE_SIZE       512
+#define     GROUP_1_CREATURES_PER_BANK  (8192/GROUP_1_CREATURE_SIZE)
+#define     GROUP_1_BANKS               GROUP_1_COUNT/GROUP_1_CREATURES_PER_BANK
+
+#define     GROUP_2_START_BANK          (GROUP_1_START_BANK+GROUP_1_BANKS)
+#define     GROUP_2_COUNT               64
+#define     GROUP_2_CREATURE_SIZE       1024
+#define     GROUP_2_CREATURES_PER_BANK  (8192/GROUP_2_CREATURE_SIZE)
+#define     GROUP_2_BANKS               GROUP_2_COUNT/GROUP_2_CREATURES_PER_BANK
+
+#define     GROUP_3_START_BANK          (GROUP_2_START_BANK+GROUP_2_BANKS)
+#define     GROUP_3_COUNT               64
+#define     GROUP_3_CREATURE_SIZE       2048
+#define     GROUP_3_CREATURES_PER_BANK  (8192/GROUP_3_CREATURE_SIZE)
+#define     GROUP_3_BANKS               GROUP_3_COUNT/GROUP_3_CREATURES_PER_BANK
 //
 //  NOT FOR PUBLIC USE!
 //
@@ -16,28 +33,40 @@ Creature* creature_get(OID_CREATURE index) {
     byte bank_index;
     Creature* creature;
 
-    if (index < 64) {
-        RAM_BANK = 2 + index/16;        // 0-63 are 512 bytes, in banks 2 thru 5.
-        bank_index   = index%16;        // 16 creatures per bank
-        creature = (Creature*)(0xA000 + bank_index * 512);
-        creature->memory_footprint = CREATURE_TYPE_PLANT; // clubs/"tree"
-        creature->bank = 2 + index/16;
+    if (index < GROUP_1_COUNT) {
+        RAM_BANK    = GROUP_1_START_BANK + index/GROUP_1_CREATURES_PER_BANK;
+        bank_index  = index%GROUP_1_CREATURES_PER_BANK;        
+        creature    = (Creature*)(0xA000 + bank_index * GROUP_1_CREATURE_SIZE);
+        creature->memory_footprint = CREATURE_TYPE_PLANT; 
     }
-    else if (index < 192) {
-        RAM_BANK   = index/8 - 2;       // 64-191 are 1,024 bytes, in banks 6 thru 21.
-        bank_index = index%8;           // 8 creatures per bank
-        creature = (Creature*)(0xA000 + bank_index * 1024);
-        creature->memory_footprint = CREATURE_TYPE_ANIMAL; 
-        creature->bank = index/8 - 2;
+    else 
+    {
+        index -= GROUP_1_COUNT;
+        if (index < GROUP_2_COUNT) {
+            RAM_BANK   = GROUP_2_START_BANK + index/GROUP_2_CREATURES_PER_BANK;
+            bank_index = index%GROUP_2_CREATURES_PER_BANK;    
+            creature = (Creature*)(0xA000 + bank_index * GROUP_2_CREATURE_SIZE);
+            creature->memory_footprint = CREATURE_TYPE_ANIMAL; 
+        }
+        else {
+            index -= GROUP_2_COUNT;
+            RAM_BANK   = GROUP_3_START_BANK + index/GROUP_3_CREATURES_PER_BANK;
+            bank_index = index%GROUP_3_CREATURES_PER_BANK;     
+            creature = (Creature*)(0xA000 + bank_index * GROUP_3_CREATURE_SIZE);
+            creature->memory_footprint = CREATURE_TYPE_ADVANCED; 
+        }
     }
-    else {
-        RAM_BANK   = index/4 - 26;      // 192-255 are 2,048 bytes, in banks 22 thru 37.
-        bank_index = index%4;           // 4 creatures per bank
-        creature = (Creature*)(0xA000 + bank_index * 2048);
-        creature->memory_footprint = CREATURE_TYPE_ADVANCED; 
-        creature->bank = index/4 - 26;
-    }
+    creature->bank = RAM_BANK;
     return creature;
+}
+
+void creature_memwipe() {
+    byte i;
+    for(i=GROUP_1_START_BANK; i<GROUP_3_START_BANK+GROUP_3_BANKS; ++i)
+    {
+        RAM_BANK = i;
+        memset( ((void*)0xa000), 0, 8192);
+    }
 }
 
 Creature* creature_extract(OID_CREATURE index) {
@@ -62,15 +91,17 @@ void creature_show(OID_CREATURE index) {
     Creature* creature = creature_get(index);
 	if (creature->active) {
 		gotoxy(creature->x, creature->y+1);
-		textcolor(COLOR_WHITE);
-		cputc(creature->memory_footprint); // 'c'); // 33 + index);
+		textcolor(COLOR_GREEN);
+		cputc(creature->memory_footprint);
 	}
 }
 
-void creature_randomWalk(OID_CREATURE index) {
+void creature_go(OID_CREATURE index) {
     Creature* creature = creature_get(index);
 
-    if (creature->memory_footprint == CREATURE_TYPE_PLANT) return;
+    if (creature->memory_footprint == CREATURE_TYPE_PLANT) {
+        // do something plantlike?
+    }
     else switch(rand() % 8) {
         case 0: if ( creature->x > 1 )           creature->x--; break;
         case 1: if ( creature->x < MAP_WIDTH-1)  creature->x++; break;
@@ -78,4 +109,14 @@ void creature_randomWalk(OID_CREATURE index) {
         case 3: if ( creature->y < MAP_HEIGHT-1) creature->y++; break;
         default: break;
     }
+}
+
+byte findEmptySlot() {
+    byte i;
+    for(i=0; i<256; ++i) {
+        Creature* creature = creature_get(i);
+        if (creature->active == 0)
+            return i;
+    }
+    return 0; // so 0 is never active?
 }

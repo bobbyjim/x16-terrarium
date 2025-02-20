@@ -25,29 +25,23 @@ void init() {
 	// initialization code goes here
 	setPETFont();
 	_randomize();
+
+	creature_memwipe();
+	creature_init( 1 ); // activate one
+//	creature_dump( i );
 }
 
 void main() {
-	byte num_creatures = 255;
-	byte i;
-	Creature* creature;
-
 	init();
-	for(i=0; i<num_creatures; ++i) {
-		creature_init( i );
-		creature_dump( i );
-	}
-
 	map_show();
 
 	for(;;) {
-		for(i=0; i<num_creatures; ++i) {
-			creature = creature_extract(i);
+		byte i = rand() % 255; // monte carlo
+		Creature* creature = creature_extract(i);
+		if (creature->active) {
 			map_show_cell(creature->y, creature->x);
-			creature_randomWalk(i);
-			//creature_dump(i);
+			creature_go(i);
 			creature_show(i);
-			//pause_jiffies(1);
 		}
 	}
 }
