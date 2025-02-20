@@ -12,10 +12,6 @@
 #include "test.h"
 #include "map.h"
 
-Creature creatures[ CREATURE_COUNT ];
-
-extern unsigned char runtime_high_id;
-
 void setPETFont()
 {
    // set PET font
@@ -26,29 +22,32 @@ void setPETFont()
 }
 
 void init() {
-	unsigned char i = 0;
-
 	// initialization code goes here
 	setPETFont();
 	_randomize();
 }
 
 void main() {
-	unsigned char num_creatures = 3;
-	unsigned char i;
+	byte num_creatures = 255;
+	byte i;
+	Creature* creature;
 
 	init();
-	for(i=0; i<num_creatures; ++i)
-		creature_init(&creatures[i]);
+	for(i=0; i<num_creatures; ++i) {
+		creature_init( i );
+		creature_dump( i );
+	}
+
 	map_show();
 
 	for(;;) {
-		pause_jiffies(100);
 		for(i=0; i<num_creatures; ++i) {
-			map_show_cell(creatures[i].y, creatures[i].x);
-			creature_randomWalk(&creatures[i]);
-			map_show_cell(creatures[i].y, creatures[i].x);
-			creature_show(&creatures[i]);
+			creature = creature_extract(i);
+			map_show_cell(creature->y, creature->x);
+			creature_randomWalk(i);
+			//creature_dump(i);
+			creature_show(i);
+			//pause_jiffies(1);
 		}
 	}
 }

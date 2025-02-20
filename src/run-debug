@@ -1,0 +1,1 @@
+../../x16 -echo iso -bas BOOT.BAS -run -scale 2

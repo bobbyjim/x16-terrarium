@@ -2,6 +2,7 @@
 #define _COMMON_H_
 
 #define	byte	unsigned char
+#define OID_CREATURE    unsigned char
 
 #define	RAM_BANK_MAP	1
 

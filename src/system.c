@@ -21,11 +21,3 @@ void system_ack() {
 #define cputc(c)			printf("%c",c)
 #define kbhit()				0
 #endif
-
-void print_creature(Creature* creature) {
-	printf("id: %u, (%d,%d) action: %u\n", 
-		creature->runtime_id,
-		creature->x,
-		creature->y,
-		creature->action);
-}

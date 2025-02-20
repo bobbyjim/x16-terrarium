@@ -3,15 +3,24 @@
 
 #include "common.h"
 
+#define CREATURE_TYPE_PLANT			216
+#define CREATURE_TYPE_ANIMAL		'c'
+#define CREATURE_TYPE_ADVANCED		'a'
+
 typedef struct {
-	unsigned char 	runtime_id;
-	unsigned int 	x    :8;
-	unsigned int 	y    :8;
-	unsigned char 	action;
+	byte index;
+	byte bank;
+	unsigned int	x    	:8;
+	unsigned int	y    	:7;
+	unsigned int	active	:1;
+	byte action;
+	byte memory_footprint;
 } Creature;
 
-void creature_show(Creature* creature);
-void creature_init(Creature* creature);
-void creature_randomWalk(Creature* creature);
+Creature* creature_extract(OID_CREATURE i);
+void creature_dump(OID_CREATURE i);
+void creature_show(OID_CREATURE i);
+void creature_init(OID_CREATURE i);
+void creature_randomWalk(OID_CREATURE i);
 
 #endif
