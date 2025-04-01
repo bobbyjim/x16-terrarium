@@ -5,6 +5,7 @@
 
 #include "common.h"
 #include "creature.h"
+#include "biochem.h"
 
 #define     GROUP_1_START_BANK          2
 #define     GROUP_1_COUNT               128
@@ -85,6 +86,8 @@ void creature_init(OID_CREATURE index) {
 	creature->x = 5 + rand() % (MAP_WIDTH-10);
 	creature->y = 5 + rand() % (MAP_HEIGHT-10);
 	creature->action = 0;
+
+    biochem_init(creature);
 }
 
 void creature_show(OID_CREATURE index) {
@@ -99,6 +102,8 @@ void creature_show(OID_CREATURE index) {
 void creature_go(OID_CREATURE index) {
     Creature* creature = creature_get(index);
 
+    creature->active = biochem_apply(creature);
+
     if (creature->memory_footprint == CREATURE_TYPE_PLANT) {
         // do something plantlike?
     }
@@ -111,12 +116,27 @@ void creature_go(OID_CREATURE index) {
     }
 }
 
-byte findEmptySlot() {
-    byte i;
+int findEmptySlot() {
+    int i;
     for(i=0; i<256; ++i) {
         Creature* creature = creature_get(i);
         if (creature->active == 0)
             return i;
     }
-    return 0; // so 0 is never active?
+    return -1;
+}
+
+void creature_debug(OID_CREATURE index) {
+    Creature* creature = creature_get(index);
+
+    gotoxy(0,59);
+    cprintf("%3u:  %s  adp %-3u atp %-3u sta %-3u glu %-3u gly %-3u",
+        index,
+        creature->active? "alive" : "dead ",
+        creature->chemicals[CHEM_ADP],
+        creature->chemicals[CHEM_ATP],
+        creature->chemicals[CHEM_STARCH],
+        creature->chemicals[CHEM_GLUCOSE],
+        creature->chemicals[CHEM_GLYCOGEN]
+    );
 }

@@ -1,6 +1,6 @@
-SOURCES = main.c timer.c creature.c DNA.c map.c test.c system.c
+SOURCES = main.c biochem.c creature.c map.c system.c test.c timer.c 
 
-PROGRAM = MAIN
+PROGRAM = MAIN.X16
 
 CC65_TARGET = cx16
 

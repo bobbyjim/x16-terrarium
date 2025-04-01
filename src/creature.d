@@ -1,4 +1,4 @@
-.obj/creature.o:	creature.c common.h creature.h
+.obj/creature.o:	creature.c common.h creature.h biochem.h
 
-creature.c common.h creature.h:
+creature.c common.h creature.h biochem.h:
 

@@ -5,7 +5,7 @@
 
 struct timespec ts;
 
-void pause_jiffies(unsigned jiffies)
+void timer_pause(unsigned jiffies)
 {
     clock_t now = clock();
     if (clock() < now + jiffies)
@@ -14,7 +14,7 @@ void pause_jiffies(unsigned jiffies)
     }
 }
 
-long getMillis()
+long timer_getMillis()
 {
     clock_gettime(CLOCK_REALTIME, &ts);
     return ts.tv_nsec / 1000000;

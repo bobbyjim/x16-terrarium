@@ -4,6 +4,7 @@
 */
 #include <6502.h>
 #include <stdlib.h>
+#include <conio.h>
 
 #include "common.h"
 #include "timer.h"
@@ -11,6 +12,8 @@
 #include "system.h"
 #include "test.h"
 #include "map.h"
+
+#include "biochem.h"
 
 void setPETFont()
 {
@@ -24,15 +27,18 @@ void setPETFont()
 void init() {
 	// initialization code goes here
 	setPETFont();
+	cprintf("press <enter>");
+	while(!kbhit());
 	_randomize();
 
 	creature_memwipe();
 	creature_init( 1 ); // activate one
-//	creature_dump( i );
 }
 
 void main() {
 	init();
+
+	exit(0);
 	map_show();
 
 	for(;;) {
@@ -42,6 +48,8 @@ void main() {
 			map_show_cell(creature->y, creature->x);
 			creature_go(i);
 			creature_show(i);
+			creature_debug(i);
+			timer_pause(1);
 		}
 	}
 }
